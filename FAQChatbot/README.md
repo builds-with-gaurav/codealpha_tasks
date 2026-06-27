@@ -13,7 +13,7 @@ This project was developed as part of the **CodeAlpha Internship**.
 You can try the project directly in your browser:
 
 🔗 **Live Website:**  
-https://builds-with-gaurav.github.io/codealpha_tasks/LanguageTranslation/
+https://builds-with-gaurav.github.io/codealpha_tasks/FAQChatbot/frontend/
 
 > **Note:** If the website doesn't open immediately after a new update, wait a few minutes for GitHub Pages to deploy the latest version.
 
@@ -61,7 +61,7 @@ LanguageTranslation/
 
 Simply open the following link in your browser:
 
-https://builds-with-gaurav.github.io/codealpha_tasks/LanguageTranslation/
+https://builds-with-gaurav.github.io/codealpha_tasks/FAQChatbot/frontend/
 
 No installation is required.
 
