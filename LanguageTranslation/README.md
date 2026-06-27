@@ -4,7 +4,7 @@ A responsive Language Translation Web Application built using **HTML**, **CSS**,
 
 ## 🚀 Live Demo
 
-🔗 https://builds-with-gaurav.github.io/codealpha_tasks/
+🔗 https://builds-with-gaurav.github.io/codealpha_tasks/LanguageTranslation/
 
 ---
 
@@ -60,7 +60,7 @@ This project is deployed using **GitHub Pages**.
 
 Live Website:
 
-https://builds-with-gaurav.github.io/codealpha_tasks/
+(https://builds-with-gaurav.github.io/codealpha_tasks/LanguageTranslation/)
 
 ---
 
