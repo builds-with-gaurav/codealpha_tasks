@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# model weights download on first run
+*.pt
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+# Ignore YOLO model weights
+*.pt
