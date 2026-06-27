@@ -1,0 +1,39 @@
+/* LinguaShift — small custom touches on top of Tailwind */
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0.5rem;
+  color: rgb(100 116 139);
+  transition: background-color .15s ease, color .15s ease, transform .1s ease;
+}
+.icon-btn:hover {
+  background-color: rgb(241 245 249);
+  color: rgb(79 70 229);
+}
+.icon-btn:active { transform: scale(0.92); }
+
+:where(.dark) .icon-btn { color: rgb(148 163 184); }
+:where(.dark) .icon-btn:hover {
+  background-color: rgb(30 41 59);
+  color: rgb(129 140 248);
+}
+
+/* Toast visible state */
+#toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Custom scrollbar for textarea */
+textarea::-webkit-scrollbar { width: 8px; }
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(203 213 225);
+  border-radius: 4px;
+}
+:where(.dark) textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(51 65 85);
+}
