@@ -1,90 +1,193 @@
-# FAQ Chatbot
+# 🌍 CodeAlpha - Language Translation
 
-A retrieval-based chatbot that answers frequently asked questions. It uses basic
-NLP (NLTK) to clean up text and TF-IDF + cosine similarity (scikit-learn) to find
-the FAQ that best matches whatever the user types.
+A simple and responsive **Language Translation** web application built using **HTML**, **CSS**, and **JavaScript**.
 
-Built for the CodeAlpha AI internship (Task 2).
+The application allows users to translate text between multiple languages using an online translation API. It provides an easy-to-use interface for selecting source and target languages, entering text, and viewing translated results instantly.
 
-## How it works
+This project was developed as part of the **CodeAlpha Internship**.
 
-1. The FAQs live in `faqs.json` as a list of question/answer pairs.
-2. Each entry is preprocessed: lowercased, stripped of punctuation/numbers,
-   tokenized, stopwords removed, and lemmatized.
-3. The cleaned text is turned into TF-IDF vectors with scikit-learn.
-4. For a user's question we vectorize it the same way and compute cosine
-   similarity against every FAQ. The closest one wins.
-5. If the best score is below a confidence threshold, the bot says it doesn't
-   know instead of returning a bad guess.
+---
 
-The matcher indexes the answer text along with the question, which helps when
-people phrase things differently from the original FAQ wording.
+# 🌐 Live Demo
 
-## Project layout
+You can try the project directly in your browser:
+
+🔗 **Live Website:**  
+https://builds-with-gaurav.github.io/codealpha_tasks/LanguageTranslation/
+
+> **Note:** If the website doesn't open immediately after a new update, wait a few minutes for GitHub Pages to deploy the latest version.
+
+---
+
+# 📌 Features
+
+* ✅ Translate text between multiple languages
+* ✅ User-friendly and responsive interface
+* ✅ Supports dozens of languages
+* ✅ Swap source and target languages
+* ✅ Instant translation
+* ✅ Copy translated text
+* ✅ Clear input and output fields
+* ✅ Works directly in the browser
+* ✅ Mobile-friendly design
+
+---
+
+# 🛠 Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* Translation API
+
+---
+
+# 📁 Project Structure
 
 ```
-.
-├── chatbot.py        # the NLP engine (preprocessing + TF-IDF matching)
-├── cli.py            # command-line chat
-├── app.py            # Flask server + REST endpoint
-├── faqs.json         # the FAQ knowledge base
-├── requirements.txt
-└── frontend/         # web chat UI (HTML/CSS/JS)
-    ├── index.html
-    ├── styles.css
-    └── app.js
+LanguageTranslation/
+│
+├── index.html
+├── styles.css
+├── app.js
+└── README.md
 ```
 
-## Setup
+---
+
+# 🚀 Installation Guide
+
+## Option 1: Use the Live Website
+
+Simply open the following link in your browser:
+
+https://builds-with-gaurav.github.io/codealpha_tasks/LanguageTranslation/
+
+No installation is required.
+
+---
+
+## Option 2: Run Locally
+
+### Step 1: Clone the Repository
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/builds-with-gaurav/codealpha_tasks.git
 ```
 
-The first run downloads a few small NLTK data packages (punkt, stopwords,
-wordnet) automatically.
-
-## Running it
-
-Command line:
+Move into the project folder:
 
 ```bash
-python cli.py
+cd codealpha_tasks/LanguageTranslation
 ```
 
-Web app:
+---
 
-```bash
-python app.py
-# open http://localhost:5000
+### Step 2: Open the Project
+
+Since this is a front-end project, you can open it using:
+
+- VS Code
+- Any web browser
+
+---
+
+### Step 3: Run the Project
+
+You can either:
+
+Double-click
+
+```
+index.html
 ```
 
-## API
+or
 
-`POST /ask`
+Open the folder in VS Code and use the **Live Server** extension.
 
-```json
-{ "message": "how long does shipping take?" }
-```
+---
 
-Response:
+# ▶ Using the Application
 
-```json
-{
-  "answer": "Standard delivery takes 3 to 5 business days...",
-  "matched_question": "How long does delivery take?",
-  "confidence": 0.35
-}
-```
+1. Enter the text you want to translate.
+2. Select the source language.
+3. Select the target language.
+4. Click the **Translate** button.
+5. View the translated text instantly.
+6. Use the **Swap** button to exchange source and target languages.
 
-## Customizing
+---
 
-Edit `faqs.json` to use your own questions and answers. No code changes needed.
-You can tune how strict the matching is by changing the `threshold` value when
-creating `FAQChatbot` (lower = more answers but more wrong guesses).
+# 📸 Output
 
-## Notes
+The application provides:
 
-- The web UI talks to the Flask backend. If you open `frontend/index.html`
-  directly without the server, it falls back to a small in-browser matcher so
-  you can still click around -- but the Python engine is the real one.
+* Clean and responsive user interface
+* Fast language translation
+* Multiple language support
+* Easy language selection
+* Instant translated results
+
+---
+
+# 🧠 How It Works
+
+1. The user enters text.
+2. The user selects source and destination languages.
+3. JavaScript sends the translation request to the translation API.
+4. The API processes the request.
+5. The translated text is displayed on the screen.
+
+---
+
+# 📦 Requirements
+
+To run this project locally, you only need:
+
+* A modern web browser
+* Internet connection (required for the translation API)
+
+No additional software or Python installation is required.
+
+---
+
+# 🌍 Supported Browsers
+
+* Google Chrome
+* Microsoft Edge
+* Mozilla Firefox
+* Brave Browser
+* Opera
+
+---
+
+# 🚀 Quick Links
+
+🌐 **Live Demo**
+
+https://builds-with-gaurav.github.io/codealpha_tasks/LanguageTranslation/
+
+💻 **GitHub Repository**
+
+https://github.com/builds-with-gaurav/codealpha_tasks
+
+---
+
+# 👨‍💻 Author
+
+**Gaurav Verma**
+
+GitHub
+
+https://github.com/builds-with-gaurav
+
+LinkedIn
+
+https://www.linkedin.com/in/gauravvermatech/
+
+---
+
+# ⭐ Support
+
+If you found this project useful, please consider giving it a ⭐ on GitHub.
